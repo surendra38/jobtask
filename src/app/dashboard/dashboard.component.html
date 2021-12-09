@@ -1,0 +1,207 @@
+<div>
+    <h3 class="trackStatus">Tracking Status</h3>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center" >
+            <div class="card col-md-7 col-lg-7 p-3">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 col-sm-2 p-3">
+
+                        <div class="d-flex justify-content-start align-items-center" *ngFor="let userData of users">
+                            <h6 class="card-text">Mahindra First Choice</h6>
+                            <span><a href="#" class="link px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-chat-square"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span><button type="button"  class="btn btn-secondary mobile" data-bs-toggle="tooltip" data-bs-placement="top" title="{{userData.mobile}}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                              </button>
+                            </span>
+                        </div>
+                        <small>Kandivali East 400 101</small>
+                    </div>
+
+                    <div class="col-md-6 col-sm-2" *ngFor="let userData of users">
+
+                        <div class="d-flex justify-content-start align-items-center"m *ngFor="let serviceAdvi of serviceAdvisor">
+                            <h6 class="card-text">I'm {{serviceAdvi.advisorName}}, your Service Advisor</h6>
+                            <span><a href="#" class="link px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-chat-square"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span><button type="button" class="btn btn-secondary mobile" data-bs-toggle="tooltip" data-bs-placement="top" title="{{userData.mobile}}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                              </button>
+                            </span>
+                        </div>
+                        <small>I will be helping you through this service</small>
+                    </div>
+                </div>
+
+                <div class=" row d-flex justify-content-end align-content-center my-3" *ngFor="let serviceAdvi of serviceAdvisor">
+                    <div class="col-md-6">
+                        <h5>Booking details</h5>
+                    </div>
+                    <div class="col-md-6 text-end">Booking-ID:{{serviceAdvi.bookingId}}</div>
+                </div>
+                <div class="row d-flex justify-content-center align-content-center">
+                    <div class="add col-md-6" *ngFor="let userData of users">
+                        <h6 style="color: blue;">{{userData.name}}</h6>
+                        <p class="content contentFont">{{userData.mobile}}</p><br>
+                    </div>
+                    <div class="col-md-6" *ngFor="let serviceAdvi of serviceAdvisor">
+                        <h6 style="color: blue;">{{serviceAdvi.vehicleName}}</h6>
+                        <p class="content contentFont">{{serviceAdvi.vehicle_no}}</p><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5" *ngFor="let userData of users">
+                        <p class="para">Booking Date & Time</p>
+                        <p class="content contentFont">{{userData.bookingDate}} at {{userData.bookingTime}}</p>
+                        <p class="para">Appointment Date & Time</p>
+                        <p class="content contentFont">{{userData.appoinmentDate}} at {{userData.appoinmentTime}}</p>
+                        <p class="para">Pick Up & Drop Details</p>
+                        <p class="para" href="" style="color: blue;">{{userData.name}}</p>
+                        <small class="para contentFont">{{userData.pickUp}} <a data-bs-toggle="modal" (click)="changeModal('address')" data-bs-target="#exampleModal" data-bs-whatever="@mdo">[ Edit ]</a>
+                        </small>
+                    </div>
+                    <!-- Modal -->
+                    <!-- Scrollable modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                                <!-- <div class="mb-3">
+                                  <label for="first-name" class="col-form-label">Name :</label>
+                                  <input type="text" formControlName="" class="form-control" id="first-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mobile-name" class="col-form-label">Mobile :</label>
+                                    <input type="text" formControlName="" class="form-control" id="mobile-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Booking-date" class="col-form-label">Booking Date & Time :</label>
+                                    <input type="Date" formControlName=""class="form-control" id="Booking-date">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Appointment-date" class="col-form-label">Appointment Date & Time :</label>
+                                    <input type="date" formControlName="" class="form-control" id="Appointment-date">
+                                </div> -->
+                                <div *ngIf="switchModal1" class="mb-3">
+                                    <label for="Pick-Up-Details" class="col-form-label">Pick Up & Details :</label>
+                                    <textarea class="form-control" placeholder="Please Enter Address..." formControlName="address" id="Pick-Up-Details" rows="3"></textarea>
+                                </div>
+                                <div *ngIf="switchModal2" class="mb-3">
+                                    <label for="services" class="col-form-label">Services :</label>
+                                    <input type="text" class="form-control" placeholder="Please Enter Services"formControlName="services" id="services">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Update</button>
+                                  </div>
+                              </form>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Modal end -->
+                    <div class="col-md-1 vl"></div>
+                    <div class="col-md-6">
+                        <p class="para">Services Details</p>
+                        <ul class="contentFont" *ngFor="let serviceAd of serviceAdvisor; index as i">
+                            <li class="listItem" *ngFor="let service of serviceAd.service">{{service}}</li>
+                            <!-- <li class="listItem">basic Service</li>
+                            <li class="listItem">Engine Scanning</li>
+                            <li class="listItem">Inspection & Diagnostics</li> -->
+                        </ul>
+                        <a data-bs-toggle="modal" (click)="changeModal('service')" data-bs-target="#exampleModal" style="color: red;" data-bs-whatever="@mdo">Add Services Instructions></a>
+                        
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-content-center mt-3">
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-start align-items-center">
+                        <h6>Need Help with your Booking?</h6>
+                        
+                        <span><a href="#" class="link px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-chat-square"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        </svg>
+                    </a>
+                </span>
+                        </div>
+                        
+                        <small> Contact our customer support</small>
+                        <p>1800-000-0000</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="contentFont">We will be happy to hear you !</h6>
+                        <small>Do rate on app Store and also write us a review,<br>if you had already rated us
+                            again.</small>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card card-border-0 col-md-4 col-sm-8  text-center mb-3" style="margin-left: 3%;">
+                <h4>Pick-Up Scheduled</h4>
+                <small>Share OTP with the Drivers once he reaches your location</small>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="mt-3">
+                        <p class="para contentFont">Mr. Shyam Kanojia</p>
+                        <small class="para">Your Vehicle Pickup Driver</small>
+                    </div>
+                    <div class="mt-3">
+                        <small class="contentfont para ">OTP</small>
+                        <p class="contentFont para ">0099</p>
+                    </div>
+                    <div *ngFor="let userData of users">
+                        <button type="button" class="btn btn-secondary mobile" data-bs-toggle="tooltip" data-bs-placement="top" title="{{userData.mobile}}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                          </button>
+                    </div>
+                </div>
+                <div class="row " *ngFor="let pickUp of pickUpDetails">
+                    <div class="col-md-5 mt-3">
+                    <p class="para" style="color: lightgray;">Pick-Up Date</p>
+                    <p class="content contentFont">{{pickUp.pickupDate}}</p>
+                    </div>
+                <div class="col-md-1 vl " style="height: 50px;color: rgb(241, 237, 237);"></div>
+                <div class="col-md-5 mt-3">
+                    <p class="para" style="color: lightgrey;">Pick-Up Time</p>
+                    <p class="content contentFont">{{pickUp.pickUpTime}}</p>
+                </div>
+                </div>
+                <div class="card-footer w-100 d-flex justify-content-between align-content-center" *ngFor="let pickUp of pickUpDetails" style="background-color: yellow; margin-top: 340px;">
+                 <h4>{{pickUp.totalCharge}}</h4><button class="paybutton px-3" >Pay Now</button>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
